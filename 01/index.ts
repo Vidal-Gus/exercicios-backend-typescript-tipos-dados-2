@@ -1,19 +1,19 @@
 import fs from 'fs';
 
-const lerArquivo = (path: string): string => {
+const lerArquivo = (path: string): unknown => {
 
     const dadosArquivo = fs.readFileSync(path);
-    // console.log(dadosArquivo.toString());
 
-    return dadosArquivo.toString();
+    return JSON.parse(dadosArquivo.toString());
 }
 
-const escreverEmArquivo = (data: string, path: string) => {
-
+const escreverEmArquivo = (data: any, path: string) => {
     fs.writeFileSync(path, data);
 
 }
 
-console.log(lerArquivo('./bd.json'));
-escreverEmArquivo('Teste de escrita', './bd.json');
-console.log(lerArquivo('./bd.json'));
+// console.log(lerArquivo('./bd.json'));
+// escreverEmArquivo('Teste de escrita', './bd.json');
+// console.log(lerArquivo('./bd.json'));
+
+export = { escreverEmArquivo, lerArquivo }
