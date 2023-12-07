@@ -1,14 +1,14 @@
 import fs from 'fs';
 
-const lerArquivo = (path: string): unknown => {
+const lerArquivo = (): unknown => {
 
-    const dadosArquivo = fs.readFileSync(path);
+    const dadosArquivo = fs.readFileSync('./bd.json');
 
     return JSON.parse(dadosArquivo.toString());
 }
 
-const escreverEmArquivo = (data: any, path: string) => {
-    fs.writeFileSync(path, data);
+const escreverEmArquivo = (data: any) => {
+    fs.writeFileSync('./bd.json', JSON.stringify(data));
 
 }
 

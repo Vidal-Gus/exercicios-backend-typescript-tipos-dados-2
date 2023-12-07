@@ -1,1 +1,59 @@
-[{"nome":"troca","email":"troca@gmail.com","cpf":1923434,"endereco":null},{"nome":"gustavo","email":"gustavo@gmail.com","cpf":1923434,"endereco":null},{"nome":"gustavo","email":"gustavo@gmail.com","cpf":1923434,"endereco":null},{"nome":"gustavo","email":"gustavo@gmail.com","cpf":1923434,"endereco":null},{"nome":"gustavo","email":"gustavo@gmail.com","cpf":1923434,"profissao":"programador","endereco":{"cep":1287324,"rua":"Major","complemento":"entretenimento","bairro":"RJ","cidade":"RJ"}}]
+[
+    {
+        "nome": "troca",
+        "email": "troca@gmail.com",
+        "cpf": 123456,
+        "endereco": null
+    },
+    {
+        "nome": "gustavo",
+        "email": "gustavo@gmail.com",
+        "cpf": 98760,
+        "endereco": null
+    },
+    {
+        "nome": "gustavo",
+        "email": "gustavo@gmail.com",
+        "cpf": 54321,
+        "endereco": null
+    },
+    {
+        "nome": "gustavo",
+        "email": "gustavo@gmail.com",
+        "cpf": 45390,
+        "endereco": null
+    },
+    {
+        "nome": "gustavo",
+        "email": "gustavo@gmail.com",
+        "cpf": 1923434,
+        "profissao": "programador",
+        "endereco": {
+            "cep": 28754,
+            "rua": "Major",
+            "complemento": "entretenimento",
+            "bairro": "RJ",
+            "cidade": "RJ"
+        }
+    },
+    {
+        "nome": "gustavo",
+        "email": "gustavo@gmail.com",
+        "cpf": 6584374,
+        "profissao": "programador",
+        "endereco": {
+            "cep": 1287324,
+            "rua": "Major",
+            "complemento": "entretenimento",
+            "bairro": "RJ",
+            "cidade": "RJ"
+        }
+    },
+    {
+        "nome": "vidal",
+        "email": "vidal@gmail.com",
+        "cpf": 55555,
+        "profissao": "programador",
+        "endereco": null
+    }
+]

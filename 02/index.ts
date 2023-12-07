@@ -33,18 +33,18 @@ type Usuario = {
 }
 
 const criarUsuario = (usuario: Usuario): Usuario => {
-    const bancoAtual = funcoesBD.lerArquivo('./bd.json') as Usuario[]
+    const bancoAtual = funcoesBD.lerArquivo() as Usuario[]
 
     bancoAtual.push(usuario)
 
-    funcoesBD.escreverEmArquivo(JSON.stringify(bancoAtual), './bd.json')
+    funcoesBD.escreverEmArquivo(bancoAtual)
 
     return usuario
 }
 
 const usuarioNulo = {
-    nome: "gustavo",
-    email: "gustavo@gmail.com",
+    nome: "vidal",
+    email: "vidal@gmail.com",
     cpf: 1923434,
     profissao: "programador",
     endereco: {
@@ -57,10 +57,12 @@ const usuarioNulo = {
 }
 
 const listarUsuarios = (): Usuario[] => {
-    const bancoAtual = funcoesBD.lerArquivo('./bd.json') as Usuario[];
+    const bancoAtual = funcoesBD.lerArquivo() as Usuario[];
 
     return bancoAtual
 }
 
 criarUsuario(usuarioNulo);
 console.log(listarUsuarios());
+
+export = Usuario;
