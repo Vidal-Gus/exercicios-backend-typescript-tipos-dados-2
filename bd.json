@@ -48,12 +48,5 @@
             "bairro": "RJ",
             "cidade": "RJ"
         }
-    },
-    {
-        "nome": "vidal",
-        "email": "vidal@gmail.com",
-        "cpf": 55555,
-        "profissao": "programador",
-        "endereco": null
     }
 ]
